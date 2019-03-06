@@ -1,0 +1,565 @@
+var AiMenu = {
+	"File" : {
+		"New" : "New", 
+		"NewFromTemplate" : "newFromTemplate",
+		"Open" : "open",
+		"BrowseInBridge" : "Adobe Bridge Browse",
+		"Close" : "close",
+		"Save" : "save",
+		"SaveAs" : "saveas",
+		"SaveACopy" : "saveacopy",
+		"SaveAsTemplate" : "saveastemplate",
+		"SaveSelectedSlices" : "Adobe AI Save Selected Slices",
+		"Revert" : "revert",
+		"Place" : "AI Place",
+		"Export" : {
+			"Export" : "export",
+			"ExportForScreens" : "exportForScreens",
+			"EaveForWebAndDevices" : "Adobe AI Save For Web"
+			},
+		"ExportSelection" : "exportSelection",
+		"Scripts" : {
+			"OtherScript" : "ai_browse_for_script"
+			},
+		"DocumentSetup" : "document",
+		"DocumentColorMode" : {
+			"CMYKColor" : "doc-color-cmyk",
+			"RGBColor" : "doc-color-rgb"
+			},
+		"File Info" : "File Info",
+		"Print" : "Print",
+		"Exit" : "quit"
+		},
+	"Edit" : {
+		"Undo" : "undo",
+		"Redo" : "redo",
+		"Cut" : "cut",
+		"Copy" : "copy",
+		"Paste" : "paste",
+		"PasteInFront" : "pasteFront",
+		"PasteInBack" : "pasteBack",
+		"PasteInPlace" : "pasteInPlace",
+		"PasteOnAllArtboards" : "pasteInAllArtboard",
+		"Clear" : "clear",
+		"FindAndReplace" : "Find and Replace",
+		"FindNext" : "Find Next",
+		"CheckSpelling" : "Check Spelling",
+		"DefinePattern" : "Define Pattern Menu Item",
+		"EditColors" : {
+			"RecolorArtwork" : "Recolor Art Dialog",
+			"AdjustColorBalance" : "Adjust3",
+			"BlendFrontToBack" : "Colors3",
+			"BlendHorizontally" : "Colors4",
+			"BlendVertically" : "Colors5",
+			"ConvertToCMYK" : "Colors8",
+			"ConvertToGrayscale" : "Colors7",
+			"ConvertToRGB" : "Colors9",
+			"InvertColors" : "Colors6",
+			"OverprintBlack" : "Overprint2",
+			"Saturate" : "Saturate3"
+		},
+		"EditOriginal" : "EditOriginal Menu Item",
+		"TransparencyFlattenerPresets" : "Transparency Presets",
+		"TracingPresets" : "TracingPresets",
+		"PrintPresets" : "Print Presets",
+		"AdobePDFPresets" : "PDF Presets",
+		"SWFPresets" : "SWFPresets",
+		"PerspectiveGridPresets" : "PerspectiveGridPresets",
+		"ColorSettings" : "color",
+		"AssignProfile" : "assignprofile",
+		"KeyboardShortcuts" : "KBSC Menu Item",
+		"Preferences" : {
+			"General" : "preference",
+			"SelectionAndAnchor Display" : "selectPref",
+			"Type" : "keyboardPref",
+			"Units" : "unitundoPref",
+			"GuidesAndGrid" : "guidegridPref",
+			"SmartGuides" : "snapPref",
+			"Slices" : "slicePref",
+			"Hyphenation" : "hyphenPref",
+			"PluginsAndScratch Disks" : "pluginPref",
+			"UserInterface" : "UIPref",
+			"FileHandling & Clipboard" : "FileClipboardPref",
+			"AppearanceOfBlack" : "BlackPref"
+			}
+		},
+	"Object" : {
+		"Transform" : {
+			"TransformAgain" : "transformagain",
+			"Move" : "transformmove",
+			"Rotate" : "transformrotate",
+			"Reflect" : "transformreflect",
+			"Scale" : "transformscale",
+			"Shear" : "transformshear",
+			"TransformEach" : "Transform v23",
+			"Reset Bounding Box" : "AI Reset Bounding Box"
+			},
+		"Arrange" : {
+			"BringToFront" : "sendToFront",
+			"BringForward" : "sendForward",
+			"SendBackward" : "sendBackward",
+			"SendToBack" : "sendToBack",
+			"SendToCurrent Layer" : "Selection Hat 2"
+			},
+		"Group" : "group",
+		"Ungroup" : "ungroup",
+		"Lock" : {
+			"Selection" : "lock",
+			"AllArtworkAbove" : "Selection Hat 5",
+			"OtherLayers" : "Selection Hat 7"
+			},
+		"UnlockAll" : "unlockAll",
+		"Hide" : {
+			"Selection" : "hide",
+			"AllArtworkAbove" : "Selection Hat 4",
+			"OtherLayers" : "Selection Hat 6"
+			},
+		"ShowAll" : "showAll",
+		"Expand" : "Expand3",
+		"ExpandAppearance" : "expandStyle",
+		"FlattenTransparency" : "FlattenTransparency1",
+		"Rasterize" : "Rasterize 8 menu item",
+		"CreateGradientMesh" : "make mesh",
+		"CreateObjectMosaic" : "AI Object Mosaic Plug-in4",
+		"CreateTrimMarks" : "TrimMark v25",
+		"Slice" : {
+			"Make" : "AISlice Make Slice",
+			"Release" : "AISlice Release Slice",
+			"Create from Guides" : "AISlice Create from Guides",
+			"Create from Selection" : "AISlice Create from Selection",
+			"Duplicate Slice" : "AISlice Duplicate",
+			"Combine Slices" : "AISlice Combine",
+			"Divide Slices" : "AISlice Divide",
+			"Delete All" : "AISlice Delete All Slices",
+			"Slice Options" : "AISlice Slice Options",
+			"Clip to Artboard" : "AISlice Clip to Artboard"
+			},
+		"Path" : {
+			"Join" : "join",
+			"Average" : "average",
+			"OutlineStroke" : "OffsetPath v22",
+			"OffsetPath" : "OffsetPath v23",
+			"Simplify" : "simplify menu item",
+			"AddAnchorPoints" : "Add Anchor Points2",
+			"RemoveAnchorPoints" : "Remove Anchor Points menu",
+			"DivideObjectsBelow" : "Knife Tool2",
+			"SplitIntoGrid" : "Rows and Columns….",
+			"CleanUp" : "cleanup menu item"
+		},
+		"Blend" : {
+			"Make" : "Path Blend Make",
+			"Release" : "Path Blend Release",
+			"Expand" : "Path Blend Expand",
+			"BlendOptions" : "Path Blend Options",
+			"ReplaceSpine" : "Path Blend Replace Spine",
+			"ReverseSpine" : "Path Blend Reverse Spine",
+			"ReverseFrontToBack" : "Path Blend Reverse Stack"
+			},
+		"EnvelopeDistort" : {
+			"MakeWithWarp" : "Make Warp",
+			"MakeWithMesh" : "Create Envelope Grid",
+			"MakeWithTopObject" : "Make Envelope",
+			"Release" : "Release Envelope",
+			"EnvelopeOptions" : "Envelope Options",
+			"Expand" : "Expand Envelope",
+			"EditContents" : "Edit Envelope Contents"
+			},
+		"Perspective" : {
+			"AttachToActivePlane" : "Attach to Active Plane",
+			"ReleaseWithPerspective" : "Release with Perspective",
+			"MovePlaneToMatchObject" : "Show Object Grid Plane",
+			"EditText" : "Edit Original Object"
+			},
+		"LivePaint" : {
+			"Make" : "Make Planet X",
+			"Merge" : "Marge Planet X",
+			"Release" : "Release Planet X",
+			"Gap Options" : "Planet X Options",
+			"Expand" : "Expand Planet X"
+			},
+		"TextWrap" : {
+			"Make" : "Make Text Wrap",
+			"Release" : "Release Text Wrap",
+			"TextWrapOptions" : "Text Wrap Options…"
+			},
+		"Clipping Mask" : {
+			"Make" : "makeMask",
+			"Release" : "releaseMask",
+			"Edit Contents" : "editMask"
+			},
+		"CompoundPath" : {
+			"Make" : "compoundPath",
+			"Release" : "noCompoundPath"
+			},
+		"Artboards" : {
+			"ConvertToArtboards" : "setCropMarks",
+			"Rearrange" : "ReArrange Artboards",
+			"FitToArtworkBounds" : "Fit Artboard to artwork bounds",
+			"FitToSelectedArt" : "Fit Artboard to selected Art"
+			},
+		"Graph" : {
+			"Type" : "setGraphStyle",
+			"Data" : "editGraphData",
+			"Design" : "graphDesigns",
+			"Column" : "setBarDesign",
+			"Marker" : "setIconDesign"
+			}
+		},
+	"Type" : {
+		"Glyphs" : "alternate glyph palette plugin",
+		"AreaTypeOptions" : "area-type-options",
+		"TypeOnAPath" : {
+			"Rainbow" : "Rainbow",
+			"3DRibbon" : "3D ribbon",
+			"Skew" : "Skew",
+			"StairStep" : "Stair Step",
+			"Gravity" : "Gravity",
+			"TypeOnAPathOptions" : "typeOnPathOptions",
+			"UpdateLegacyTypeOnAPath" : "updateLegacyTOP"
+			},
+		"ThreadedText" : {
+			"Create" : "threadTextCreate",
+			"ReleaseSelection" : "releaseThreadedTextSelection",
+			"RemoveThreading" : "removeThreading"
+			},
+		"CompositeFonts" : "Adobe internal composite font plugin",
+		"KinsokuShoriSettings" : "Adobe Kinsoku Settings",
+		"MojikumiSettings" : "Adobe MojiKumi Settings",
+		"FitHeadline" : "fitHeadline",
+		"CreateOutlines" : "outline",
+		"FindFont" : "Adobe Illustrator Find Font Menu Item",
+		"ChangeCase" : {
+			"UpperCase" : "UpperCase Change Case Item",
+			"lowerCase" : "LowerCase Change Case Item",
+			"TitleCase" : "Title Case Change Case Item",
+			"SentenceCase" : "Sentence case Change Case Item"
+			},
+		"SmartPunctuation" : "Adobe Illustrator Smart Punctuation Menu Item",
+		"OpticalMarginAlignment" : "Adobe Optical Alignment Item",
+		"ShowHiddenCharacters" : "showHiddenChar",
+		"TypeOrientation" : {
+			"Horizontal" : "type-horizontal",
+			"Vertical" : "type-vertical"
+			}
+		},
+	"Select" : {
+		"All" : "selectall",
+		"AllOnActive Artboard" : "selectallinartboard",
+		"Deselect" : "deselectall",
+		"Reselect" : "Find Reselect menu item",
+		"Inverse" : "Inverse menu item",
+		"NextObjectAbove" : "Selection Hat 8",
+		"NextObjectBelow" : "Selection Hat 9",
+		"Same" : {
+			"Appearance" : "Find Appearance menu item",
+			"AppearanceAttribute" : "Find Appearance Attributes menu item",
+			"BlendingMode" : "Find Blending Mode menu item",
+			"FillAndStroke" : "Find Fill & Stroke menu item",
+			"FillColor" : "Find Fill Color menu item",
+			"Opacity" : "Find Opacity menu item",
+			"StrokeColor" : "Find Stroke Color menu item",
+			"StrokeWeight" : "Find Stroke Weight menu item",
+			"GraphicStyle" : "Find Style menu item",
+			"SymbolInstance" : "Find Symbol Instance menu item",
+			"LinkBlockSeries" : "Find Link Block Series menu item"
+			},
+		"Object" : {
+			"AllOnSameLayers" : "Selection Hat 3",
+			"DirectionHandles" : "Selection Hat 1",
+			"NotAlignedToPixelGrid" : "Selection Hat 12",
+			"BristleBrushStrokes" : "Bristle Brush Strokes menu item",
+			"BrushStrokes" : "Brush Strokes menu item",
+			"ClippingMasks" : "Clipping Masks menu item",
+			"StrayPoints" : "Stray Points menu item",
+			"TextObjects" : "Text Objects menu item",
+			"FlashDynamicText" : "Dynamic Text",
+			"FlashInputText" : "Input Text"
+			},
+		"SaveSelection" : "Selection Hat 10",
+		"EditSelection" : "Selection Hat 11"
+		},
+
+	"Effect" : {
+		"ApplyLastEffect" : "Adobe Apply Last Effect",
+		"LastEffect" : "Adobe Last Effect",
+		"DocumentRasterEffectsSettings" : "Live Rasterize Effect Setting",
+		"3D" : {
+			"Extrude & Bevel" : "Live 3DExtrude",
+			"Revolve" : "Live 3DRevolve",
+			"Rotate" : "Live 3DRotate"
+			},
+		"ConvertToShape" : {
+			"Rectangle" : "Live Rectangle",
+			"RoundedRectangle" : "Live Rounded Rectangle",
+			"Ellipse" : "Live Ellipse"
+			},
+		"CropMarks" : "Live Trim Marks",
+		"DistortAndTransform" : {
+			"FreeDistort" : "Live Free Distort",
+			"PuckerAndBloat" : "Live Pucker & Bloat",
+			"Roughen" : "Live Roughen",
+			"Transform" : "Live Transform",
+			"Tweak" : "Live Scribble and Tweak",
+			"Twist" : "Live Twist",
+			"ZigZag" : "Live Zig Zag"
+			},
+		"Path" : {
+			"Offset Path" : "Live Offset Path",
+			"Outline Object" : "Live Outline Object",
+			"Outline Stroke" : "Live Outline Stroke"
+			},
+		"Pathfinder" : {
+			"Add" : "Live Pathfinder Add",
+			"Intersect" : "Live Pathfinder Intersect",
+			"Exclude" : "Live Pathfinder Exclude",
+			"Subtract" : "Live Pathfinder Subtract",
+			"MinusBack" : "Live Pathfinder Minus Back",
+			"Divide" : "Live Pathfinder Divide",
+			"Trim" : "Live Pathfinder Trim",
+			"Merge" : "Live Pathfinder Merge",
+			"Crop" : "Live Pathfinder Crop",
+			"Outline" : "Live Pathfinder Outline",
+			"HardMix" : "Live Pathfinder Hard Mix",
+			"SoftMix" : "Live Pathfinder Soft Mix",
+			"Trap" : "Live Pathfinder Trap"
+		},
+		"Rasterize" : "Live Rasterize",
+		"Stylize" : {
+			"DropShadow" : "Live Adobe Drop Shadow",
+			"Feather" : "Live Feather",
+			"InnerGlow" : "Live Inner Glow",
+			"outerGlow" : "Live Outer Glow",
+			"RoundCorners" : "Live Adobe Round Corners",
+			"Scribble" : "Live Scribble Fill"
+			},
+		"SVGFilters" : {
+			"ApplySVGFilter" : "Live SVG Filters",
+			"ImportSVGFilter" : "SVG Filter Import"
+			},
+		"Warp" : {
+			"Arc" : "Live Deform Arc",
+			"ArcLower" : "Live Deform Arc Lower",
+			"ArcUpper" : "Live Deform Arc Upper",
+			"Arch" : "Live Deform Arch",
+			"Bulge" : "Live Deform Bulge",
+			"ShellLower" : "Live Deform Shell Lower",
+			"ShellUpper" : "Live Deform Shell Upper",
+			"Flag" : "Live Deform Flag",
+			"Wave" : "Live Deform Wave",
+			"Fish" : "Live Deform Fish",
+			"Rise" : "Live Deform Rise",
+			"Fisheye" : "Live Deform Fisheye",
+			"Inflate" : "Live Deform Inflate",
+			"Squeeze" : "Live Deform Squeeze",
+			"Twist" : "Live Deform Twist"
+			},
+		"EffectGallery" : "Live PSAdapter_plugin_GEfc",
+		"Artistic" : {
+			"Colored Pencil" : "Live PSAdapter_plugin_ClrP",
+			"Cutout" : "Live PSAdapter_plugin_Ct",
+			"DryBrush" : "Live PSAdapter_plugin_DryB",
+			"FilmGrain" : "Live PSAdapter_plugin_FlmG",
+			"Fresco" : "Live PSAdapter_plugin_Frsc",
+			"NeonGlow" : "Live PSAdapter_plugin_NGlw",
+			"PaintDaubs" : "Live PSAdapter_plugin_PntD",
+			"PaletteKnife" : "Live PSAdapter_plugin_PltK",
+			"PlasticWrap" : "Live PSAdapter_plugin_PlsW",
+			"PosterEdges" : "Live PSAdapter_plugin_PstE",
+			"RoughPastels" : "Live PSAdapter_plugin_RghP",
+			"SmudgeStick" : "Live PSAdapter_plugin_SmdS",
+			"Sponge" : "Live PSAdapter_plugin_Spng",
+			"Underpainting" : "Live PSAdapter_plugin_Undr",
+			"Watercolor" : "Live PSAdapter_plugin_Wtrc"
+			},
+		"Blur" : {
+			"GaussianBlur" : "Live PSAdapter_plugin_GblR",
+			"RadialBlur" : "Live PSAdapter_plugin_RdlB",
+			"SmartBlur" : "Live PSAdapter_plugin_SmrB"
+			},
+		"BrushStrokes" : {
+			"AccentedEdges" : "Live PSAdapter_plugin_AccE",
+			"AngledStrokes" : "Live PSAdapter_plugin_AngS",
+			"Crosshatch" : "Live PSAdapter_plugin_Crsh",
+			"DarkStrokes" : "Live PSAdapter_plugin_DrkS",
+			"InkOutlines" : "Live PSAdapter_plugin_InkO",
+			"Spatter" : "Live PSAdapter_plugin_Spt",
+			"SprayedStrokes" : "Live PSAdapter_plugin_SprS",
+			"SumiE" : "Live PSAdapter_plugin_Smie"
+			},
+		"Distort" : {
+			"DiffuseGlow" : "Live PSAdapter_plugin_DfsG",
+			"Glass" : "Live PSAdapter_plugin_Gls",
+			"OceanRipple" : "Live PSAdapter_plugin_OcnR"
+			},
+		"Pixelate" : {
+			"ColorHalftone" : "Live PSAdapter_plugin_ClrH",
+			"Crystallize" : "Live PSAdapter_plugin_Crst",
+			"Mezzotint" : "Live PSAdapter_plugin_Mztn",
+			"Pointillize" : "Live PSAdapter_plugin_Pntl"
+			},
+		"Sharpen" : {
+			"Unsharp Mask" : "Live PSAdapter_plugin_USMk"
+			},
+		"Sketch" : {
+			"Bas Relief" : "Live PSAdapter_plugin_BsRl",
+			"ChalkAndCharcoal" : "Live PSAdapter_plugin_ChlC",
+			"Charcoal" : "Live PSAdapter_plugin_Chrc",
+			"Chrome" : "Live PSAdapter_plugin_Chrm",
+			"ContCrayon" : "Live PSAdapter_plugin_CntC",
+			"GraphicPen" : "Live PSAdapter_plugin_GraP",
+			"HalftonePattern" : "Live PSAdapter_plugin_HlfS",
+			"NotePaper" : "Live PSAdapter_plugin_NtPr",
+			"Photocopy" : "Live PSAdapter_plugin_Phtc",
+			"Plaster" : "Live PSAdapter_plugin_Plst",
+			"Reticulation" : "Live PSAdapter_plugin_Rtcl",
+			"Stamp" : "Live PSAdapter_plugin_Stmp",
+			"TornEdges" : "Live PSAdapter_plugin_TrnE",
+			"WaterPaper" : "Live PSAdapter_plugin_WtrP"
+			},
+		"Stylize" : {
+			"GlowingEdges" : "Live PSAdapter_plugin_GlwE"
+			},
+		"Texture" : {
+			"Craquelure" : "Live PSAdapter_plugin_Crql",
+			"Grain" : "Live PSAdapter_plugin_Grn",
+			"Mosaic Tiles" : "Live PSAdapter_plugin_MscT",
+			"Patchwork" : "Live PSAdapter_plugin_Ptch",
+			"StainedGlass" : "Live PSAdapter_plugin_StnG",
+			"Texturizer" : "Live PSAdapter_plugin_Txtz"
+			},
+		"Video" : {
+			"De-Interlace" : "Live PSAdapter_plugin_Dntr",
+			"NTSCColors" : "Live PSAdapter_plugin_NTSC"
+			}
+		},
+	"View" : {
+		"Preview" : "preview",
+		"OverprintPreview" : "ink",
+		"PixelPreview" : "raster",
+		"ProofSetup" : {
+			"CMYK" : "proof-document",
+			"MacintoshRGB" : "proof-mac-rgb",
+			"sRGB" : "proof-win-rgb",
+			"MonitorRGB" : "proof-monitor-rgb",
+			"ColorBlindnessPType" : "proof-colorblindp",
+			"ColorBlindnessDType" : "proof-colorblindd",
+			"Customize" : "proof-custom"
+			},
+		"ProofColors" : "proofColors",
+		"ZoomIn" : "zoomin",
+		"ZoomOut" : "zoomout",
+		"FitArtboardInWindow" : "fitin",
+		"FitAllInWindow" : "fitall",
+		"ActualSize" : "actualsize",
+		"HideEdges" : "edge",
+		"HideArtboards" : "artboard",
+		"HidePrintTiling" : "pagetiling",
+		"ShowSlices" : "AISlice Feedback Menu",
+		"LockSlices" : "AISlice Lock Menu",
+		"ShowTemplate" : "showtemplate",
+		"Rulers" : {
+			"Show Rulers" : "ruler",
+			"Show Video Rulers" : "videoruler",
+			"Change to Global Rulers" : "rulerCoordinateSystem"
+			},
+		"HideBoundingBox" : "AI Bounding Box Toggle",
+		"ShowTransparency Grid" : "TransparencyGrid Menu Item",
+		"ShowTextThreads" : "textthreads",
+		"HideGradientAnnotator" : "Gradient Feedback",
+		"ShowLivePaintGaps" : "Show Gaps Planet X",
+		"Guides" : {
+			"HideGuides" : "showguide",
+			"LockGuides" : "lockguide",
+			"MakeGuides" : "makeguide",
+			"ReleaseGuides" : "releaseguide",
+			"ClearGuides" : "clearguide"
+			},
+		"SmartGuides" : "Snapomatic on-off menu item",
+		"PerspectiveGrid" : {
+			"ShowGrid" : "Show Perspective Grid",
+			"ShowRulers" : "Show Ruler",
+			"SnapToGrid" : "Snap to Grid",
+			"LockGrid" : "Lock Perspective Grid",
+			"LockStation Point" : "Lock Station Point",
+			"DefineGrid" : "Define Perspective Grid",
+			"SaveGridAsPreset" : "Save Perspective Grid as Preset"
+			},
+		"ShowGrid" : "showgrid",
+		"SnapToGrid" : "snapgrid",
+		"SnapToPoint" : "snappoint",
+		"NewView" : "newview",
+		"EditViews" : "editview"
+		},
+
+	"Window" : {
+		"NewWindow" : "newwindow",
+		"Arrange" : {
+			"Cascade" : "cascade",
+			"Tile" : "tile",
+			"Float in Window" : "floatInWindow",
+			"Float All in Windows" : "floatAllInWindows",
+			"Consolidate All Windows" : "consolidateAllWindows"
+		},
+		"Workspace" : {
+			"SaveWorkspace" : "Adobe Save Workspace",
+			"NewWorkspace" : "Adobe New Workspace",
+			"ManageWorkspaces" : "Adobe Manage Workspace"
+			},
+		"CSSMenu" : "CSS Menu Item",
+		"Tools" : "AdobeBuiltInToolbox1",
+		"Actions" : "Adobe Action Palette",
+		"Align" : "AdobeAlignObjects2",
+		"Appearance" : "Style Palette",
+		"Artboards" : "Adobe Artboard Palette",
+		"Attributes" : "internal palettes posing as plug-in menus-attributes",
+		"Brushes" : "Adobe BrushManager Menu Item",
+		"Color" : "Adobe Color Palette",
+		"ColorGuide" : "Adobe Harmony Palette",
+		"KulerPanel" : "Adobe Illustrator Kuler Panel",
+		"DocumentInfo" : "DocInfo1",
+		"FlattenerPreview" : "Adobe Flattening Preview",
+		"Gradient" : "Adobe Gradient Palette",
+		"Graphic Styles" : "Adobe Style Palette",
+		"Info" : "internal palettes posing as plug-in menus-info",
+		"Layers" : "AdobeLayerPalette1",
+		"Links" : "Adobe LinkPalette Menu Item",
+		"MagicWand" : "AI Magic Wand",
+		"Navigator" : "AdobeNavigator",
+		"Pathfinder" : "Adobe PathfinderUI",
+		"Separations Preview" : "Adobe Separation Preview Panel",
+		"Stroke" : "Adobe Stroke Palette",
+		"SVGInteractivity" : "Adobe SVG Interactivity Palette",
+		"Swatches" : "Adobe Swatches Menu Item",
+		"Symbols" : "Adobe Symbol Palette",
+		"Transform" : "AdobeTransformObjects1",
+		"Transparency" : "Adobe Transparency Palette Menu Item",
+		"Variables" : "Adobe Variables Palette Menu Item",
+		"Character" : "internal palettes posing as plug-in menus-character",
+		"Character Styles" : "Character Styles",
+		"Glyphs" : "alternate glyph palette plugin 2",
+		"OpenType" : "internal palettes posing as plug-in menus-opentype",
+		"Paragraph" : "internal palettes posing as plug-in menus-paragraph",
+		"Paragraph Styles" : "Adobe Paragraph Styles Palette",
+		"Tabs" : "internal palettes posing as plug-in menus-tab",
+		"OtherArtStyleLibrary" : "Adobe Art Style Plugin Other libraries menu item",
+		"OtherSymbolLibrary" : "Adobe Symbol Palette Plugin Other libraries menu item"
+		},
+	"Help" : {
+		"IllustratorHelp" : "helpcontent",
+		"AboutIllustrator" : "about",
+		"SystemInfo" : "System Info",
+		},
+	"Panels" : {
+		"NewSymbol" : "Adobe New Symbol Shortcut",
+		"ShowColor Panel (Secondary)" : "Adobe Color Palette Secondary",
+		"ActionsBatch" : "Adobe Actions Batch",
+		"AddNewFill" : "Adobe New Fill Shortcut",
+		"AddNewStroke" : "Adobe New Stroke Shortcut",
+		"NewGraphicStyle" : "Adobe New Style Shortcut",
+		"NewLayer" : "AdobeLayerPalette2",
+		"NewLayerWithDialog" : "AdobeLayerPalette3",
+		"UpdateLink" : "Adobe Update Link Shortcut",
+		"Navigator Options" : "AdobeNavigator2",
+		"NewSwatch" : "Adobe New Swatch Shortcut Menu"
+		}
+	}
