@@ -67,21 +67,21 @@ var aiMenu = {
 		"perspectiveGridPresets" : "PerspectiveGridPresets",
 		"colorSettings" : "color",
 		"assignProfile" : "assignprofile",
-		"keyboardShortcuts" : "KBSC Menu Item",
-		"preferences" : {
-			"general" : "preference",
-			"selectionAndAnchorDisplay" : "selectPref",
-			"type" : "keyboardPref",
-			"units" : "unitundoPref",
-			"guidesAndGrid" : "guidegridPref",
-			"smartGuides" : "snapPref",
-			"slices" : "slicePref",
-			"hyphenation" : "hyphenPref",
-			"pluginsAndScratchDisks" : "pluginPref",
-			"userInterface" : "UIPref",
-			"fileHandling & Clipboard" : "FileClipboardPref",
-			"appearanceOfBlack" : "BlackPref"
-			}
+		"keyboardShortcuts" : "KBSC Menu Item"
+		},
+	"preferences" : {
+		"general" : "preference",
+		"selectionAndAnchorDisplay" : "selectPref",
+		"type" : "keyboardPref",
+		"units" : "unitundoPref",
+		"guidesAndGrid" : "guidegridPref",
+		"smartGuides" : "snapPref",
+		"slices" : "slicePref",
+		"hyphenation" : "hyphenPref",
+		"pluginsAndScratchDisks" : "pluginPref",
+		"userInterface" : "UIPref",
+		"fileHandling & Clipboard" : "FileClipboardPref",
+		"appearanceOfBlack" : "BlackPref"
 		},
 	"object" : {
 		"transform" : {
@@ -203,7 +203,8 @@ var aiMenu = {
 			"design" : "graphDesigns",
 			"column" : "setBarDesign",
 			"marker" : "setIconDesign"
-			}
+			},
+		"cropImage" : "Crop Image"
 		},
 	"type" : {
 		"glyphs" : "alternate glyph palette plugin",
@@ -246,6 +247,7 @@ var aiMenu = {
 		"all" : "selectall",
 		"allOnActive Artboard" : "selectallinartboard",
 		"deselect" : "deselectall",
+		"globalEdit" : "SmartEdit Menu Item", 
 		"reselect" : "Find Reselect menu item",
 		"inverse" : "Inverse menu item",
 		"nextObjectAbove" : "Selection Hat 8",
