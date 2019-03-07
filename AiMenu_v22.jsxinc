@@ -79,7 +79,7 @@ var aiMenu = {
 			"hyphenation" : "hyphenPref",
 			"pluginsAndScratchDisks" : "pluginPref",
 			"userInterface" : "UIPref",
-			"fileHandling & Clipboard" : "FileClipboardPref",
+			"fileHandlingAndClipboard" : "FileClipboardPref",
 			"appearanceOfBlack" : "BlackPref"
 			}
 		},
@@ -94,7 +94,7 @@ var aiMenu = {
 		"hyphenation" : "hyphenPref",
 		"pluginsAndScratchDisks" : "pluginPref",
 		"userInterface" : "UIPref",
-		"fileHandling & Clipboard" : "FileClipboardPref",
+		"fileHandlingAndClipboard" : "FileClipboardPref",
 		"appearanceOfBlack" : "BlackPref"
 		},
 	"object" : {
@@ -300,7 +300,7 @@ var aiMenu = {
 		"lastEffect" : "Adobe Last Effect",
 		"documentRasterEffectsSettings" : "Live Rasterize Effect Setting",
 		"live3D" : {
-			"extrude & Bevel" : "Live 3DExtrude",
+			"extrudeAndBevel" : "Live 3DExtrude",
 			"revolve" : "Live 3DRevolve",
 			"rotate" : "Live 3DRotate"
 			},
@@ -320,9 +320,9 @@ var aiMenu = {
 			"zigZag" : "Live Zig Zag"
 			},
 		"path" : {
-			"offset Path" : "Live Offset Path",
-			"outline Object" : "Live Outline Object",
-			"outline Stroke" : "Live Outline Stroke"
+			"offsetPath" : "Live Offset Path",
+			"outlineObject" : "Live Outline Object",
+			"outlineStroke" : "Live Outline Stroke"
 			},
 		"pathfinder" : {
 			"add" : "Live Pathfinder Add",
@@ -438,13 +438,13 @@ var aiMenu = {
 		"texture" : {
 			"craquelure" : "Live PSAdapter_plugin_Crql",
 			"grain" : "Live PSAdapter_plugin_Grn",
-			"mosaic Tiles" : "Live PSAdapter_plugin_MscT",
+			"mosaicTiles" : "Live PSAdapter_plugin_MscT",
 			"patchwork" : "Live PSAdapter_plugin_Ptch",
 			"stainedGlass" : "Live PSAdapter_plugin_StnG",
 			"texturizer" : "Live PSAdapter_plugin_Txtz"
 			},
 		"video" : {
-			"de-Interlace" : "Live PSAdapter_plugin_Dntr",
+			"deInterlace" : "Live PSAdapter_plugin_Dntr",
 			"nTSCColors" : "Live PSAdapter_plugin_NTSC"
 			}
 		},
@@ -479,7 +479,7 @@ var aiMenu = {
 			"changeToGlobalRulers" : "rulerCoordinateSystem"
 			},
 		"hideBoundingBox" : "AI Bounding Box Toggle",
-		"showTransparency Grid" : "TransparencyGrid Menu Item",
+		"showTransparencyGrid" : "TransparencyGrid Menu Item",
 		"showTextThreads" : "textthreads",
 		"hideGradientAnnotator" : "Gradient Feedback",
 		"showLivePaintGaps" : "Show Gaps Planet X",
@@ -542,7 +542,7 @@ var aiMenu = {
 		"magicWand" : "AI Magic Wand",
 		"navigator" : "AdobeNavigator",
 		"pathfinder" : "Adobe PathfinderUI",
-		"separations Preview" : "Adobe Separation Preview Panel",
+		"separationsPreview" : "Adobe Separation Preview Panel",
 		"stroke" : "Adobe Stroke Palette",
 		"svgInteractivity" : "Adobe SVG Interactivity Palette",
 		"swatches" : "Adobe Swatches Menu Item",
@@ -551,11 +551,11 @@ var aiMenu = {
 		"transparency" : "Adobe Transparency Palette Menu Item",
 		"variables" : "Adobe Variables Palette Menu Item",
 		"character" : "internal palettes posing as plug-in menus-character",
-		"character Styles" : "Character Styles",
+		"characterStyles" : "Character Styles",
 		"glyphs" : "alternate glyph palette plugin 2",
 		"openType" : "internal palettes posing as plug-in menus-opentype",
 		"paragraph" : "internal palettes posing as plug-in menus-paragraph",
-		"paragraph Styles" : "Adobe Paragraph Styles Palette",
+		"paragraphStyles" : "Adobe Paragraph Styles Palette",
 		"tabs" : "internal palettes posing as plug-in menus-tab",
 		"otherArtStyleLibrary" : "Adobe Art Style Plugin Other libraries menu item",
 		"otherSymbolLibrary" : "Adobe Symbol Palette Plugin Other libraries menu item"
@@ -567,7 +567,7 @@ var aiMenu = {
 		},
 	"panels" : {
 		"newSymbol" : "Adobe New Symbol Shortcut",
-		"showColor Panel (Secondary)" : "Adobe Color Palette Secondary",
+		"showColorPanel (Secondary)" : "Adobe Color Palette Secondary",
 		"actionsBatch" : "Adobe Actions Batch",
 		"addNewFill" : "Adobe New Fill Shortcut",
 		"addNewStroke" : "Adobe New Stroke Shortcut",
