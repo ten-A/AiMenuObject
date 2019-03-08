@@ -484,6 +484,7 @@ var aiMenu = {
 		"showSlices" : "AISlice Feedback Menu",
 		"lockSlices" : "AISlice Lock Menu",
 		"showTemplate" : "showtemplate",
+		"showGradientGuide" : "Gradient Feedback",
 		"rulers" : {
 			"showRulers" : "ruler",
 			"showVideoRulers" : "videoruler",
