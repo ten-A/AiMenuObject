@@ -63,7 +63,7 @@ var aiMenu = {
 		"tracingPresets" : "TracingPresets",
 		"printPresets" : "Print Presets",
 		"adobePDFPresets" : "PDF Presets",
-		"sWFPresets" : "SWFPresets",
+		"swfPresets" : "SWFPresets",
 		"perspectiveGridPresets" : "PerspectiveGridPresets",
 		"colorSettings" : "color",
 		"assignProfile" : "assignprofile",
