@@ -1,0 +1,592 @@
+var aiMenu = {
+	"file" : {
+		"new" : "New", 
+		"newFromTemplate" : "newFromTemplate",
+		"open" : "open",
+		"browseInBridge" : "Adobe Bridge Browse",
+		"close" : "close",
+		"save" : "save",
+		"saveAs" : "saveas",
+		"saveACopy" : "saveacopy",
+		"saveAsTemplate" : "saveastemplate",
+		"saveSelectedSlices" : "Adobe AI Save Selected Slices",
+		"revert" : "revert",
+		"searchAdobeStock" : "Search Adobe Stock",
+		"place" : "AI Place",
+		"export" : {
+			"export" : "export",
+			"exportForScreens" : "exportForScreens",
+			"saveForWebAndDevices" : "Adobe AI Save For Web"
+			},
+		"exportSelection" : "exportSelection",
+		"packageMenuItem" : "Package Menu Item",
+		"scripts" : {
+			"otherScript" : "ai_browse_for_script"
+			},
+		"documentSetup" : "document",
+		"documentColorMode" : {
+			"cmykColor" : "doc-color-cmyk",
+			"rgbColor" : "doc-color-rgb"
+			},
+		"fileInfo" : "File Info",
+		"print" : "Print",
+		"exit" : "quit"
+		},
+	"edit" : {
+		"undo" : "undo",
+		"redo" : "redo",
+		"cut" : "cut",
+		"copy" : "copy",
+		"paste" : "paste",
+		"pasteInFront" : "pasteFront",
+		"pasteInBack" : "pasteBack",
+		"pasteInPlace" : "pasteInPlace",
+		"pasteOnAllArtboards" : "pasteInAllArtboard",
+		"clear" : "clear",
+		"findAndReplace" : "Find and Replace",
+		"findNext" : "Find Next",
+		"checkSpelling" : "Check Spelling",
+		"editColors" : {
+			"recolorArtwork" : "Recolor Art Dialog",
+			"adjustColorBalance" : "Adjust3",
+			"blendFrontToBack" : "Colors3",
+			"blendHorizontally" : "Colors4",
+			"blendVertically" : "Colors5",
+			"convertToCMYK" : "Colors8",
+			"convertToGrayscale" : "Colors7",
+			"convertToRGB" : "Colors9",
+			"invertColors" : "Colors6",
+			"overprintBlack" : "Overprint2",
+			"saturate" : "Saturate3"
+		},
+		"editOriginal" : "EditOriginal Menu Item",
+		"transparencyFlattenerPresets" : "Transparency Presets",
+		"tracingPresets" : "TracingPresets",
+		"printPresets" : "Print Presets",
+		"adobePDFPresets" : "PDF Presets",
+		"swfPresets" : "SWFPresets",
+		"perspectiveGridPresets" : "PerspectiveGridPresets",
+		"colorSettings" : "color",
+		"assignProfile" : "assignprofile",
+		"keyboardShortcuts" : "KBSC Menu Item",
+		"preferences" : {
+			"general" : "preference",
+			"selectionAndAnchorDisplay" : "selectPref",
+			"type" : "keyboardPref",
+			"units" : "unitundoPref",
+			"guidesAndGrid" : "guidegridPref",
+			"smartGuides" : "snapPref",
+			"slices" : "slicePref",
+			"hyphenation" : "hyphenPref",
+			"pluginsAndScratchDisks" : "pluginPref",
+			"userInterface" : "UIPref",
+			"fileHandlingAndClipboard" : "FileClipboardPref",
+			"appearanceOfBlack" : "BlackPref"
+			}
+		},
+	"preferences" : {
+		"general" : "preference",
+		"selectionAndAnchorDisplay" : "selectPref",
+		"type" : "keyboardPref",
+		"units" : "unitundoPref",
+		"guidesAndGrid" : "guidegridPref",
+		"smartGuides" : "snapPref",
+		"slices" : "slicePref",
+		"hyphenation" : "hyphenPref",
+		"pluginsAndScratchDisks" : "pluginPref",
+		"userInterface" : "UIPref",
+		"fileHandlingAndClipboard" : "FileClipboardPref",
+		"appearanceOfBlack" : "BlackPref"
+		},
+	"object" : {
+		"transform" : {
+			"transformAgain" : "transformagain",
+			"move" : "transformmove",
+			"rotate" : "transformrotate",
+			"reflect" : "transformreflect",
+			"scale" : "transformscale",
+			"shear" : "transformshear",
+			"transformEach" : "Transform v23",
+			"resetBoundingBox" : "AI Reset Bounding Box"
+			},
+		"arrange" : {
+			"bringToFront" : "sendToFront",
+			"bringForward" : "sendForward",
+			"sendBackward" : "sendBackward",
+			"sendToBack" : "sendToBack",
+			"sendToCurrentLayer" : "Selection Hat 2"
+			},
+		"group" : "group",
+		"ungroup" : "ungroup",
+		"lock" : {
+			"selection" : "lock",
+			"allArtworkAbove" : "Selection Hat 5",
+			"otherLayers" : "Selection Hat 7"
+			},
+		"unlockAll" : "unlockAll",
+		"hide" : {
+			"selection" : "hide",
+			"allArtworkAbove" : "Selection Hat 4",
+			"otherLayers" : "Selection Hat 6"
+			},
+		"showAll" : "showAll",
+		"expand" : "Expand3",
+		"expandAppearance" : "expandStyle",
+		"flattenTransparency" : "FlattenTransparency1",
+		"rasterize" : "Rasterize 8 menu item",
+		"createGradientMesh" : "make mesh",
+		"createObjectMosaic" : "AI Object Mosaic Plug-in4",
+		"createTrimMarks" : "TrimMark v25",
+		"slice" : {
+			"make" : "AISlice Make Slice",
+			"release" : "AISlice Release Slice",
+			"createFromGuides" : "AISlice Create from Guides",
+			"createFromSelection" : "AISlice Create from Selection",
+			"duplicateSlice" : "AISlice Duplicate",
+			"combineSlices" : "AISlice Combine",
+			"divideSlices" : "AISlice Divide",
+			"deleteAll" : "AISlice Delete All Slices",
+			"sliceOptions" : "AISlice Slice Options",
+			"clipToArtboard" : "AISlice Clip to Artboard"
+			},
+		"path" : {
+			"join" : "join",
+			"average" : "average",
+			"outlineStroke" : "OffsetPath v22",
+			"offsetPath" : "OffsetPath v23",
+			"simplify" : "simplify menu item",
+			"addAnchorPoints" : "Add Anchor Points2",
+			"removeAnchorPoints" : "Remove Anchor Points menu",
+			"divideObjectsBelow" : "Knife Tool2",
+			"splitIntoGrid" : "Rows and Columns….",
+			"cleanUp" : "cleanup menu item"
+		},
+		"shape" : {
+			"expandShape" : "Expand Shape",
+			"convertToShape" : "Convert to Shape"
+		},
+		"pattern" : {
+			"adobeMakePattern" : "Adobe Make Pattern",
+			"adobeEditPattern" : "Adobe Edit Pattern",
+			"adobe PatternTileColor" : "Adobe Pattern Tile Colo
+		},
+		"blend" : {
+			"make" : "Path Blend Make",
+			"release" : "Path Blend Release",
+			"expand" : "Path Blend Expand",
+			"blendOptions" : "Path Blend Options",
+			"replaceSpine" : "Path Blend Replace Spine",
+			"reverseSpine" : "Path Blend Reverse Spine",
+			"reverseFrontToBack" : "Path Blend Reverse Stack"
+			},
+		"envelopeDistort" : {
+			"makeWithWarp" : "Make Warp",
+			"makeWithMesh" : "Create Envelope Grid",
+			"makeWithTopObject" : "Make Envelope",
+			"release" : "Release Envelope",
+			"envelopeOptions" : "Envelope Options",
+			"expand" : "Expand Envelope",
+			"editContents" : "Edit Envelope Contents"
+			},
+		"perspective" : {
+			"attachToActivePlane" : "Attach to Active Plane",
+			"releaseWithPerspective" : "Release with Perspective",
+			"movePlaneToMatchObject" : "Show Object Grid Plane",
+			"editText" : "Edit Original Object"
+			},
+		"livePaint" : {
+			"make" : "Make Planet X",
+			"merge" : "Marge Planet X",
+			"release" : "Release Planet X",
+			"gapOptions" : "Planet X Options",
+			"expand" : "Expand Planet X"
+			},
+		"textWrap" : {
+			"make" : "Make Text Wrap",
+			"release" : "Release Text Wrap",
+			"textWrapOptions" : "Text Wrap Options…"
+			},
+		"clippingMask" : {
+			"make" : "makeMask",
+			"release" : "releaseMask",
+			"editContents" : "editMask"
+			},
+		"compoundPath" : {
+			"make" : "compoundPath",
+			"release" : "noCompoundPath"
+			},
+		"artboards" : {
+			"convertToArtboards" : "setCropMarks",
+			"rearrange" : "ReArrange Artboards",
+			"fitToArtworkBounds" : "Fit Artboard to artwork bounds",
+			"fitToSelectedArt" : "Fit Artboard to selected Art"
+			},
+		"graph" : {
+			"type" : "setGraphStyle",
+			"data" : "editGraphData",
+			"design" : "graphDesigns",
+			"column" : "setBarDesign",
+			"marker" : "setIconDesign"
+			},
+		"cropImage" : "Crop Image",
+		"makeMesh" : "make mesh"
+		},
+	"type" : {
+		"glyphs" : "alternate glyph palette plugin",
+		"areaTypeOptions" : "area-type-options",
+		"typeOnAPath" : {
+			"rainbow" : "Rainbow",
+			"threeDRibbon" : "3D ribbon",
+			"skew" : "Skew",
+			"stairStep" : "Stair Step",
+			"gravity" : "Gravity",
+			"typeOnAPathOptions" : "typeOnPathOptions",
+			"updateLegacyTypeOnAPath" : "updateLegacyTOP"
+			},
+		"threadedText" : {
+			"create" : "threadTextCreate",
+			"releaseSelection" : "releaseThreadedTextSelection",
+			"removeThreading" : "removeThreading"
+			},
+		"compositeFonts" : "Adobe internal composite font plugin",
+		"kinsokuShoriSettings" : "Adobe Kinsoku Settings",
+		"mojikumiSettings" : "Adobe MojiKumi Settings",
+		"fitHeadline" : "fitHeadline",
+		"createOutlines" : "outline",
+		"findFont" : "Adobe Illustrator Find Font Menu Item",
+		"changeCase" : {
+			"upperCase" : "UpperCase Change Case Item",
+			"lowerCase" : "LowerCase Change Case Item",
+			"titleCase" : "Title Case Change Case Item",
+			"sentenceCase" : "Sentence case Change Case Item"
+			},
+		"smartPunctuation" : "Adobe Illustrator Smart Punctuation Menu Item",
+		"opticalMarginAlignment" : "Adobe Optical Alignment Item",
+		"showHiddenCharacters" : "showHiddenChar",
+		"typeOrientation" : {
+			"horizontal" : "type-horizontal",
+			"vertical" : "type-vertical"
+			}
+		},
+	"select" : {
+		"all" : "selectall",
+		"allOnActive Artboard" : "selectallinartboard",
+		"deselect" : "deselectall",
+		"globalEdit" : "SmartEdit Menu Item", 
+		"reselect" : "Find Reselect menu item",
+		"inverse" : "Inverse menu item",
+		"nextObjectAbove" : "Selection Hat 8",
+		"nextObjectBelow" : "Selection Hat 9",
+		"same" : {
+			"appearance" : "Find Appearance menu item",
+			"appearanceAttribute" : "Find Appearance Attributes menu item",
+			"blendingMode" : "Find Blending Mode menu item",
+			"fillAndStroke" : "Find Fill & Stroke menu item",
+			"fillColor" : "Find Fill Color menu item",
+			"opacity" : "Find Opacity menu item",
+			"strokeColor" : "Find Stroke Color menu item",
+			"strokeWeight" : "Find Stroke Weight menu item",
+			"graphicStyle" : "Find Style menu item",
+			"symbolInstance" : "Find Symbol Instance menu item",
+			"linkBlockSeries" : "Find Link Block Series menu item"
+			},
+		"object" : {
+			"allOnSameLayers" : "Selection Hat 3",
+			"directionHandles" : "Selection Hat 1",
+			"notAlignedToPixelGrid" : "Selection Hat 12",
+			"bristleBrushStrokes" : "Bristle Brush Strokes menu item",
+			"brushStrokes" : "Brush Strokes menu item",
+			"clippingMasks" : "Clipping Masks menu item",
+			"strayPoints" : "Stray Points menu item",
+			"textObjects" : "Text Objects menu item",
+			"flashDynamicText" : "Dynamic Text",
+			"flashInputText" : "Input Text"
+			},
+		"saveSelection" : "Selection Hat 10",
+		"editSelection" : "Selection Hat 11"
+		},
+
+	"effect" : {
+		"applyLastEffect" : "Adobe Apply Last Effect",
+		"lastEffect" : "Adobe Last Effect",
+		"documentRasterEffectsSettings" : "Live Rasterize Effect Setting",
+		"live3D" : {
+			"extrudeAndBevel" : "Live 3DExtrude",
+			"revolve" : "Live 3DRevolve",
+			"rotate" : "Live 3DRotate"
+			},
+		"convertTo" : {
+			"rectangle" : "Live Rectangle",
+			"roundedRectangle" : "Live Rounded Rectangle",
+			"ellipse" : "Live Ellipse"
+			},
+		"cropMarks" : "Live Trim Marks",
+		"distortAndTransform" : {
+			"freeDistort" : "Live Free Distort",
+			"puckerAndBloat" : "Live Pucker & Bloat",
+			"roughen" : "Live Roughen",
+			"transform" : "Live Transform",
+			"tweak" : "Live Scribble and Tweak",
+			"twist" : "Live Twist",
+			"zigZag" : "Live Zig Zag"
+			},
+		"path" : {
+			"offsetPath" : "Live Offset Path",
+			"outlineObject" : "Live Outline Object",
+			"outlineStroke" : "Live Outline Stroke"
+			},
+		"pathfinder" : {
+			"add" : "Live Pathfinder Add",
+			"intersect" : "Live Pathfinder Intersect",
+			"exclude" : "Live Pathfinder Exclude",
+			"subtract" : "Live Pathfinder Subtract",
+			"minusBack" : "Live Pathfinder Minus Back",
+			"divide" : "Live Pathfinder Divide",
+			"trim" : "Live Pathfinder Trim",
+			"merge" : "Live Pathfinder Merge",
+			"crop" : "Live Pathfinder Crop",
+			"outline" : "Live Pathfinder Outline",
+			"hardMix" : "Live Pathfinder Hard Mix",
+			"softMix" : "Live Pathfinder Soft Mix",
+			"trap" : "Live Pathfinder Trap"
+		},
+		"rasterize" : "Live Rasterize",
+		"stylize" : {
+			"dropShadow" : "Live Adobe Drop Shadow",
+			"feather" : "Live Feather",
+			"innerGlow" : "Live Inner Glow",
+			"outerGlow" : "Live Outer Glow",
+			"roundCorners" : "Live Adobe Round Corners",
+			"scribble" : "Live Scribble Fill"
+			},
+		"svgFilters" : {
+			"applySVGFilter" : "Live SVG Filters",
+			"importSVGFilter" : "SVG Filter Import"
+			},
+		"warp" : {
+			"arc" : "Live Deform Arc",
+			"arcLower" : "Live Deform Arc Lower",
+			"arcUpper" : "Live Deform Arc Upper",
+			"arch" : "Live Deform Arch",
+			"bulge" : "Live Deform Bulge",
+			"shellLower" : "Live Deform Shell Lower",
+			"shellUpper" : "Live Deform Shell Upper",
+			"flag" : "Live Deform Flag",
+			"wave" : "Live Deform Wave",
+			"fish" : "Live Deform Fish",
+			"rise" : "Live Deform Rise",
+			"fisheye" : "Live Deform Fisheye",
+			"inflate" : "Live Deform Inflate",
+			"squeeze" : "Live Deform Squeeze",
+			"twist" : "Live Deform Twist"
+			},
+		"effectGallery" : "Live PSAdapter_plugin_GEfc",
+		"artistic" : {
+			"colored Pencil" : "Live PSAdapter_plugin_ClrP",
+			"cutout" : "Live PSAdapter_plugin_Ct",
+			"dryBrush" : "Live PSAdapter_plugin_DryB",
+			"filmGrain" : "Live PSAdapter_plugin_FlmG",
+			"fresco" : "Live PSAdapter_plugin_Frsc",
+			"neonGlow" : "Live PSAdapter_plugin_NGlw",
+			"paintDaubs" : "Live PSAdapter_plugin_PntD",
+			"paletteKnife" : "Live PSAdapter_plugin_PltK",
+			"plasticWrap" : "Live PSAdapter_plugin_PlsW",
+			"posterEdges" : "Live PSAdapter_plugin_PstE",
+			"roughPastels" : "Live PSAdapter_plugin_RghP",
+			"smudgeStick" : "Live PSAdapter_plugin_SmdS",
+			"sponge" : "Live PSAdapter_plugin_Spng",
+			"underpainting" : "Live PSAdapter_plugin_Undr",
+			"watercolor" : "Live PSAdapter_plugin_Wtrc"
+			},
+		"blur" : {
+			"gaussianBlur" : "Live PSAdapter_plugin_GblR",
+			"radialBlur" : "Live PSAdapter_plugin_RdlB",
+			"smartBlur" : "Live PSAdapter_plugin_SmrB"
+			},
+		"brushStrokes" : {
+			"accentedEdges" : "Live PSAdapter_plugin_AccE",
+			"angledStrokes" : "Live PSAdapter_plugin_AngS",
+			"crosshatch" : "Live PSAdapter_plugin_Crsh",
+			"darkStrokes" : "Live PSAdapter_plugin_DrkS",
+			"inkOutlines" : "Live PSAdapter_plugin_InkO",
+			"spatter" : "Live PSAdapter_plugin_Spt",
+			"sprayedStrokes" : "Live PSAdapter_plugin_SprS",
+			"sumiE" : "Live PSAdapter_plugin_Smie"
+			},
+		"distort" : {
+			"diffuseGlow" : "Live PSAdapter_plugin_DfsG",
+			"glass" : "Live PSAdapter_plugin_Gls",
+			"oceanRipple" : "Live PSAdapter_plugin_OcnR"
+			},
+		"pixelate" : {
+			"colorHalftone" : "Live PSAdapter_plugin_ClrH",
+			"crystallize" : "Live PSAdapter_plugin_Crst",
+			"mezzotint" : "Live PSAdapter_plugin_Mztn",
+			"pointillize" : "Live PSAdapter_plugin_Pntl"
+			},
+		"sharpen" : {
+			"unsharp Mask" : "Live PSAdapter_plugin_USMk"
+			},
+		"sketch" : {
+			"basRelief" : "Live PSAdapter_plugin_BsRl",
+			"chalkAndCharcoal" : "Live PSAdapter_plugin_ChlC",
+			"charcoal" : "Live PSAdapter_plugin_Chrc",
+			"chrome" : "Live PSAdapter_plugin_Chrm",
+			"contCrayon" : "Live PSAdapter_plugin_CntC",
+			"graphicPen" : "Live PSAdapter_plugin_GraP",
+			"halftonePattern" : "Live PSAdapter_plugin_HlfS",
+			"notePaper" : "Live PSAdapter_plugin_NtPr",
+			"photocopy" : "Live PSAdapter_plugin_Phtc",
+			"plaster" : "Live PSAdapter_plugin_Plst",
+			"reticulation" : "Live PSAdapter_plugin_Rtcl",
+			"stamp" : "Live PSAdapter_plugin_Stmp",
+			"tornEdges" : "Live PSAdapter_plugin_TrnE",
+			"waterPaper" : "Live PSAdapter_plugin_WtrP"
+			},
+		"stylize" : {
+			"glowingEdges" : "Live PSAdapter_plugin_GlwE"
+			},
+		"texture" : {
+			"craquelure" : "Live PSAdapter_plugin_Crql",
+			"grain" : "Live PSAdapter_plugin_Grn",
+			"mosaicTiles" : "Live PSAdapter_plugin_MscT",
+			"patchwork" : "Live PSAdapter_plugin_Ptch",
+			"stainedGlass" : "Live PSAdapter_plugin_StnG",
+			"texturizer" : "Live PSAdapter_plugin_Txtz"
+			},
+		"video" : {
+			"deInterlace" : "Live PSAdapter_plugin_Dntr",
+			"nTSCColors" : "Live PSAdapter_plugin_NTSC"
+			}
+		},
+	"view" : {
+		"preview" : "preview",
+		"overprintPreview" : "ink",
+		"pixelPreview" : "raster",
+		"proofSetup" : {
+			"cmyk" : "proof-document",
+			"macRgb" : "proof-mac-rgb",
+			"sRgb" : "proof-win-rgb",
+			"monitorRgb" : "proof-monitor-rgb",
+			"colorBlindnessPType" : "proof-colorblindp",
+			"colorBlindnessDType" : "proof-colorblindd",
+			"customize" : "proof-custom"
+			},
+		"proofColors" : "proofColors",
+		"zoomIn" : "zoomin",
+		"zoomOut" : "zoomout",
+		"fitArtboardInWindow" : "fitin",
+		"fitAllInWindow" : "fitall",
+		"actualSize" : "actualsize",
+		"hideEdges" : "edge",
+		"hideArtboards" : "artboard",
+		"hidePrintTiling" : "pagetiling",
+		"showSlices" : "AISlice Feedback Menu",
+		"lockSlices" : "AISlice Lock Menu",
+		"showTemplate" : "showtemplate",
+		"rulers" : {
+			"showRulers" : "ruler",
+			"showVideoRulers" : "videoruler",
+			"changeToGlobalRulers" : "rulerCoordinateSystem"
+			},
+		"hideBoundingBox" : "AI Bounding Box Toggle",
+		"showTransparencyGrid" : "TransparencyGrid Menu Item",
+		"showTextThreads" : "textthreads",
+		"hideGradientAnnotator" : "Gradient Feedback",
+		"showLivePaintGaps" : "Show Gaps Planet X",
+		"guides" : {
+			"hideGuides" : "showguide",
+			"lockGuides" : "lockguide",
+			"makeGuides" : "makeguide",
+			"releaseGuides" : "releaseguide",
+			"clearGuides" : "clearguide"
+			},
+		"smartGuides" : "Snapomatic on-off menu item",
+		"perspectiveGrid" : {
+			"showGrid" : "Show Perspective Grid",
+			"showRulers" : "Show Ruler",
+			"snapToGrid" : "Snap to Grid",
+			"lockGrid" : "Lock Perspective Grid",
+			"lockStationPoint" : "Lock Station Point",
+			"defineGrid" : "Define Perspective Grid",
+			"saveGridAsPreset" : "Save Perspective Grid as Preset"
+			},
+		"showGrid" : "showgrid",
+		"snapToGrid" : "snapgrid",
+		"snapToPoint" : "snappoint",
+		"newView" : "newview",
+		"editViews" : "editview"
+		},
+
+	"window" : {
+		"newWindow" : "newwindow",
+		"arrange" : {
+			"cascade" : "cascade",
+			"tile" : "tile",
+			"floatInWindow" : "floatInWindow",
+			"floatAllInWindows" : "floatAllInWindows",
+			"consolidateAllWindows" : "consolidateAllWindows"
+		},
+		"workspace" : {
+			"saveWorkspace" : "Adobe Save Workspace",
+			"newWorkspace" : "Adobe New Workspace",
+			"manageWorkspaces" : "Adobe Manage Workspace"
+			},
+		"cssMenu" : "CSS Menu Item",
+		"tools" : "AdobeBuiltInToolbox1",
+		"actions" : "Adobe Action Palette",
+		"align" : "AdobeAlignObjects2",
+		"appearance" : "Style Palette",
+		"artboards" : "Adobe Artboard Palette",
+		"attributes" : "internal palettes posing as plug-in menus-attributes",
+		"brushes" : "Adobe BrushManager Menu Item",
+		"color" : "Adobe Color Palette",
+		"colorGuide" : "Adobe Harmony Palette",
+		"kulerPanel" : "Adobe Illustrator Kuler Panel",
+		"documentInfo" : "DocInfo1",
+		"flattenerPreview" : "Adobe Flattening Preview",
+		"gradient" : "Adobe Gradient Palette",
+		"graphicStyles" : "Adobe Style Palette",
+		"info" : "internal palettes posing as plug-in menus-info",
+		"layers" : "AdobeLayerPalette1",
+		"links" : "Adobe LinkPalette Menu Item",
+		"magicWand" : "AI Magic Wand",
+		"navigator" : "AdobeNavigator",
+		"pathfinder" : "Adobe PathfinderUI",
+		"separationsPreview" : "Adobe Separation Preview Panel",
+		"stroke" : "Adobe Stroke Palette",
+		"svgInteractivity" : "Adobe SVG Interactivity Palette",
+		"swatches" : "Adobe Swatches Menu Item",
+		"symbols" : "Adobe Symbol Palette",
+		"transform" : "AdobeTransformObjects1",
+		"transparency" : "Adobe Transparency Palette Menu Item",
+		"variables" : "Adobe Variables Palette Menu Item",
+		"character" : "internal palettes posing as plug-in menus-character",
+		"characterStyles" : "Character Styles",
+		"glyphs" : "alternate glyph palette plugin 2",
+		"openType" : "internal palettes posing as plug-in menus-opentype",
+		"paragraph" : "internal palettes posing as plug-in menus-paragraph",
+		"paragraphStyles" : "Adobe Paragraph Styles Palette",
+		"tabs" : "internal palettes posing as plug-in menus-tab",
+		"otherArtStyleLibrary" : "Adobe Art Style Plugin Other libraries menu item",
+		"otherSymbolLibrary" : "Adobe Symbol Palette Plugin Other libraries menu item"
+		},
+	"help" : {
+		"illustratorHelp" : "helpcontent",
+		"aboutIllustrator" : "about",
+		"systemInfo" : "System Info",
+		},
+	"panels" : {
+		"newSymbol" : "Adobe New Symbol Shortcut",
+		"showColorPanel (Secondary)" : "Adobe Color Palette Secondary",
+		"actionsBatch" : "Adobe Actions Batch",
+		"addNewFill" : "Adobe New Fill Shortcut",
+		"addNewStroke" : "Adobe New Stroke Shortcut",
+		"newGraphicStyle" : "Adobe New Style Shortcut",
+		"newLayer" : "AdobeLayerPalette2",
+		"newLayerWithDialog" : "AdobeLayerPalette3",
+		"updateLink" : "Adobe Update Link Shortcut",
+		"navigatorOptions" : "AdobeNavigator2",
+		"newSwatch" : "Adobe New Swatch Shortcut Menu"
+		}
+	}
