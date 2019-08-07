@@ -11,6 +11,7 @@ var aiMenu = {
 		"saveAsTemplate" : "saveastemplate",
 		"saveSelectedSlices" : "Adobe AI Save Selected Slices",
 		"revert" : "revert",
+		"searchAdobeStock" : "Search Adobe Stock",
 		"place" : "AI Place",
 		"export" : {
 			"export" : "export",
@@ -18,6 +19,7 @@ var aiMenu = {
 			"saveForWebAndDevices" : "Adobe AI Save For Web"
 			},
 		"exportSelection" : "exportSelection",
+		"packageMenuItem" : "Package Menu Item",
 		"scripts" : {
 			"otherScript" : "ai_browse_for_script"
 			},
@@ -44,7 +46,6 @@ var aiMenu = {
 		"findAndReplace" : "Find and Replace",
 		"findNext" : "Find Next",
 		"checkSpelling" : "Check Spelling",
-		"definePattern" : "Define Pattern Menu Item",
 		"editColors" : {
 			"recolorArtwork" : "Recolor Art Dialog",
 			"adjustColorBalance" : "Adjust3",
@@ -160,6 +161,15 @@ var aiMenu = {
 			"splitIntoGrid" : "Rows and Columns….",
 			"cleanUp" : "cleanup menu item"
 		},
+		"shape" : {
+			"expandShape" : "Expand Shape",
+			"convertToShape" : "Convert to Shape"
+		},
+		"pattern" : {
+			"adobeMakePattern" : "Adobe Make Pattern",
+			"adobeEditPattern" : "Adobe Edit Pattern",
+			"adobe PatternTileColor" : "Adobe Pattern Tile Color"
+		},
 		"blend" : {
 			"make" : "Path Blend Make",
 			"release" : "Path Blend Release",
@@ -218,7 +228,8 @@ var aiMenu = {
 			"column" : "setBarDesign",
 			"marker" : "setIconDesign"
 			},
-		"cropImage" : "Crop Image"
+		"cropImage" : "Crop Image",
+		"makeMesh" : "make mesh"
 		},
 	"type" : {
 		"glyphs" : "alternate glyph palette plugin",
@@ -304,7 +315,7 @@ var aiMenu = {
 			"revolve" : "Live 3DRevolve",
 			"rotate" : "Live 3DRotate"
 			},
-		"convertToShape" : {
+		"convertTo" : {
 			"rectangle" : "Live Rectangle",
 			"roundedRectangle" : "Live Rounded Rectangle",
 			"ellipse" : "Live Ellipse"

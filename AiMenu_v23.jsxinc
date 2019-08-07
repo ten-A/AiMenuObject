@@ -168,7 +168,7 @@ var aiMenu = {
 		"pattern" : {
 			"adobeMakePattern" : "Adobe Make Pattern",
 			"adobeEditPattern" : "Adobe Edit Pattern",
-			"adobe PatternTileColor" : "Adobe Pattern Tile Colo
+			"adobe PatternTileColor" : "Adobe Pattern Tile Color"
 		},
 		"blend" : {
 			"make" : "Path Blend Make",
