@@ -132,7 +132,7 @@ var aiMenu = {
 		"showAll" : "showAll",
 		"expand" : "Expand3",
 		"expandAppearance" : "expandStyle",
-		"flattenTransparency" : "FlattenTransparency1",
+		"flattenTransparency" : "Flatten Transparency",
 		"rasterize" : "Rasterize 8 menu item",
 		"createGradientMesh" : "make mesh",
 		"createObjectMosaic" : "AI Object Mosaic Plug-in4",
